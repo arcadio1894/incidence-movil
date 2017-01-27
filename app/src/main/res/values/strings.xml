@@ -3,7 +3,7 @@
     <!--  LOGIN  -->
     <string name="loginhide">Usuario</string>
     <string name="pswhide">********</string>
-    <string name="btn_ingresar">Iniciar Sesión</string>
+    <string name="btn_ingresar">Iniciar sesión</string>
     <string name="title_activity_login">Incidence Management</string>
 
     <!-- Strings related to login -->
@@ -23,25 +23,25 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Cerrar Sesión</string>
+    <string name="action_settings">Cerrar sesión</string>
     <string name="title_activity_registrar">RegistrarActivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- Registrar Incidente Fragment -->
-    <string name="data_fragment_title">Registrar Incidente</string>
-    <string name="lblProyecto">Nombre del Proyecto</string>
+    <string name="data_fragment_title">Registrar incidente</string>
+    <string name="lblProyecto">Nombre del proyecto</string>
     <string name="lblCategoría">Nombre del la categoría</string>
     <string name="lblReproductibilidad">Reproductibilidad</string>
     <string name="lblSeveridad">Severidad</string>
     <string name="lblPrioridad">Prioridad</string>
     <string name="lblResumen">Resumen</string>
-    <string name="lblDescripcion">Descripcion</string>
+    <string name="lblDescripcion">Descripción</string>
     <string name="lblInfo">Información adicional</string>
     <string name="lblPasos">Pasos para Reproducir</string>
     <string name="lblVisibilidad">Visibilidad</string>
-    <string name="btnRegistrar">Registrar Incidencia</string>
+    <string name="btnRegistrar">Registrar incidencia</string>
     <string name="lblPlataforma">Plataforma(opc)</string>
     <string name="lblSistemaO">Sistema Operativo(opc)</string>
     <string name="lblVersionSO">Versión de S.O.(opc)</string>

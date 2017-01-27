@@ -81,7 +81,7 @@ public class PanelActivity extends AppCompatActivity
         final Activity activity = this;
         AlertDialog.Builder adb = new AlertDialog.Builder(this);
         adb.setTitle("Confirmar para salir");
-        adb.setMessage("¿Esta seguro que desea cerrar sesión?");
+        adb.setMessage("¿Está seguro que desea cerrar sesión?");
 
         adb.setPositiveButton("Cerrar sesión",new DialogInterface.OnClickListener(){
             public void onClick(DialogInterface dialog,int which)
@@ -105,18 +105,10 @@ public class PanelActivity extends AppCompatActivity
         Fragment fragment = null;
         FragmentManager fragmentManager = getSupportFragmentManager();
 
-        if (id == R.id.nav_camera) {
-
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_gallery) {
             fragment = new RegistrarFragment();
-        } else if (id == R.id.nav_slideshow) {
-
         } else if (id == R.id.nav_manage) {
             fragment = new ProfileFragment();
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
         }
 
         if (fragment != null)

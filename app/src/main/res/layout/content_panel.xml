@@ -24,11 +24,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="GESTIÓN DE INCIDENTES"
+        android:text="GESTIÓN DE INCIDENCIAS"
         android:textSize="20sp" />
 
     <ImageView
-        android:src="@drawable/chanchanlogo"
+        android:src="@drawable/logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                android:text="En esta aplicación podrás registrar cualquier incidente de manera rápida y sencilla"
+                android:text="En esta aplicación podrás registrar cualquier incidencia de forma rápida y sencilla!"
                 android:textSize="20sp" />
 
         </LinearLayout>

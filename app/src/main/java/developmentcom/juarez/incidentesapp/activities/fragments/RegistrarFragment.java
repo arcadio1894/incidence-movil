@@ -58,7 +58,7 @@ public class RegistrarFragment extends Fragment {
 
         usuario = Global.getFromSharedPreferences(getActivity(),"user_login");
 
-        //Spiners
+        // Spiners
         dpProyectos = (Spinner)view.findViewById(R.id.spProyecto);
         dpCategorias = (Spinner)view.findViewById(R.id.spCategoria);
         dpRepro = (Spinner)view.findViewById(R.id.spReproductibilidad);
@@ -73,27 +73,27 @@ public class RegistrarFragment extends Fragment {
         etPlataforma = (EditText)view.findViewById(R.id.etPlataforma);
         etSO = (EditText)view.findViewById(R.id.etSistemaO);
         etVersion = (EditText)view.findViewById(R.id.etVersionSO);
-        //Boton
+        // Boton
         Button btnRegistrar = (Button)view.findViewById(R.id.btn_Registrar);
 
-        //Store de Items
+        // Store de Items
         Call<ProyectosResponse> call = IncidentesApiAdapter.getApiService(getActivity()).getProyectos();
         call.enqueue(callbackP);
         String[] itemsRepro = new String[]{"Siempre", "A veces", "Aleatorio","No se ha intentado","No reproducible","Desconocido"};
         String[] itemsSeveridad = new String[]{"Funcionalidad", "Trivial", "Ajuste","Fallo","Bloqueo"};
         String[] itemsPrioridad = new String[]{"Ninguna", "Baja", "Normal","Alta","Urgente"};
         String[] itemsVisibilidad = new String[]{"Privado","Público"};
-        //Llenado de Spiners
+        // Llenado de Spiners
         llenarSpiner(dpRepro,itemsRepro);
         llenarSpiner(dpSeveridad,itemsSeveridad);
         llenarSpiner(dpPrioridad,itemsPrioridad);
         llenarSpiner(dpVisibilidad,itemsVisibilidad);
 
-        //Listeners
+        // Listeners
         btnRegistrar.setOnClickListener(myButtonListener);
         dpProyectos.setOnItemSelectedListener(mySpinnerListener);
 
-        //Inicializar contexto
+        // Inicializar contexto
         contexto = getActivity();
 
         return view;

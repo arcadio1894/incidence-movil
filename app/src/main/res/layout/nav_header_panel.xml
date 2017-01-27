@@ -18,19 +18,19 @@
         android:layout_width="143dp"
         android:layout_height="67dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@drawable/chanchanlogo" />
+        android:src="@drawable/logo" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="CHAN CHAN S.A."
+        android:text="Gestión de incidencias"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Incidence Management" />
+        android:text="Gerencia de sistemas" />
 
 </LinearLayout>

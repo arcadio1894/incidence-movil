@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         Button btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(this);
         Usuario usuario = Global.getFromSharedPreferences(this,"user_login");
-        if(usuario!=null){
+        if (usuario != null){
             Intent intent = new Intent(this, PanelActivity.class);
             startActivity(intent);
             finish();
@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 final String user = etLogin.getText().toString();
                 final String password = etPassword.getText().toString();
                 Call<LoginResponse> call = IncidentesApiAdapter.getApiService(contexto).getLogin(user, password);
-                prgrssdlgCargando = ProgressDialog.show(contexto, "Login|Entrar", "Verificando sus datos.", true);
+                prgrssdlgCargando = ProgressDialog.show(contexto, "Login", "Verificando sus datos.", true);
                 prgrssdlgCargando.setMessage(Html.fromHtml("<font color='white'>" + "Verificando..." + "</font>"));
                 call.enqueue(this);
                 break;

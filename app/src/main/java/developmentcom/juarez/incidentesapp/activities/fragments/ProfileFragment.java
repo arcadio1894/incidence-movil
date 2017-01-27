@@ -33,7 +33,7 @@ public class ProfileFragment extends Fragment {
         etEmail = (EditText) view.findViewById(R.id.etEmail);
         etTipo = (EditText) view.findViewById(R.id.etType);
 
-        //Llenado de campos
+        // Llenado de campos
         Usuario user = Global.getFromSharedPreferences(getActivity(),"user_login");
         etUsuario.setText(user.getUsuario());
         etNombre.setText(user.getNombre());
